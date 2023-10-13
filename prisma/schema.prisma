@@ -1,0 +1,89 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  User              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId], map: "userIdAccount")
+}
+
+model Game {
+  id          String     @id
+  userId      String
+  timeStarted DateTime
+  topic       String
+  timeEnded   DateTime?
+  gameType    GameType
+  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questions    Question[]
+
+  @@index([userId])
+}
+
+model Question {
+  id                String   @id
+  question          String
+  answer            String
+  gameId            String
+  options           Json?
+  percentageCorrect Float?
+  isCorrect         Boolean?
+  questionType      GameType
+  userAnswer        String?
+  game              Game     @relation(fields: [gameId], references: [id])
+
+  @@index([gameId])
+}
+
+model Session {
+  id           String   @id
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId], map: "userIdSession")
+}
+
+model User {
+  id        String    @id
+  username  String    @unique
+  email     String    @unique
+  password  String
+  image     String?
+  createdAt DateTime  @default(now())
+  updateAt  DateTime
+  accounts   Account[]
+  games      Game[]
+  sessions   Session[]
+}
+
+model topic_count {
+  id    String @id
+  topic String @unique
+  count Int
+}
+
+enum GameType {
+  mcq
+  open_ended
+}
