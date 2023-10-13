@@ -20,14 +20,14 @@ const Tutorials: React.FC = () => {
           <p className="text-gray-700 text-base dark:text-white">
             Photosynthesis and cellular respiration are the remarkable 
             processes that power life on our planet. In this captivating 
-            topic&ldquo; &quot;Photosynthesis and Cellular Respiration&ldquo;&quot; students embark 
+            topic-Photosynthesis and Cellular Respiration students embark 
             on a journey through the interconnected cycles of energy and 
-            matter that sustain all living organisms. It&apos;s a journey into the
-            heart of life&apos;s energy dynamics.
+            matter that sustain all living organisms. Its a journey into the
+            heart of lifes energy dynamics.
 
             In this topic, students will explore how plants, the primary 
             producers of energy, capture sunlight and convert it into chemical
-            energy through photosynthesis. They&apos;ll then delve into cellular 
+            energy through photosynthesis. Theyll then delve into cellular 
             respiration, the process by which all living organisms, including
             plants, release the stored energy from food molecules, providing
             the fuel necessary for growth, maintenance, and reproduction.

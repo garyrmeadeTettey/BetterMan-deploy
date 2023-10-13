@@ -20,10 +20,10 @@ const Tutorials: React.FC = () => {
           <p className="text-gray-700 text-base dark:text-white">
 
             Genetics and heredity are captivating chapters in the story of 
-            life on Earth. This topic&ldquo; &quot;Genetics and Heredity&ldquo;&quot; takes students
+            life on Earth. This topic-Genetics and Heredity- takes students
              on a journey into the world of inheritance, exploring the 
-             mechanisms that shape an organism&apos;s traits and determine its 
-             genetic makeup. It&apos;s a tale of genes, DNA, and the inheritance of
+             mechanisms that shape an organisms traits and determine its 
+             genetic makeup. Its a tale of genes, DNA, and the inheritance of
               characteristics from one generation to the next.
 
             In this topic, students embark on a quest to unravel the genetic 
@@ -58,7 +58,7 @@ const Tutorials: React.FC = () => {
                 <p className="text-gray-700 text-base dark:text-white">
                 Key Concepts:
                 <br/><br/>
-                Genes: Genes are segments of DNA that contain instructions for making specific proteins. They determine an organism&apos;s traits, such as eye color, blood type, and height.
+                Genes: Genes are segments of DNA that contain instructions for making specific proteins. They determine an organisms traits, such as eye color, blood type, and height.
                 <br/><br/>
                 Inheritance: When organisms reproduce, they pass on their genes to their offspring. This transmission occurs through sexual reproduction (combining genes from two parents) or asexual reproduction (cloning).
                 <br/><br/>

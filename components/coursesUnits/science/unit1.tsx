@@ -18,14 +18,13 @@ const Tutorials: React.FC = () => {
         <div className="px-10 py-4">
           <div className="font-bold text-2xl mb-2 dark:text-gray-400">About this unit</div>
           <p className="text-gray-700 text-base dark:text-white">
-            The study of cells is a cornerstone of biology, providing a profound insight into the intricate workings of life itself. This topic&ldquo; 
-            &quot;The Cell - Structure and Function&ldquo;&apos; is an exploration of 
+            The study of cells is a cornerstone of biology, providing a profound insight into the intricate workings of life itself. This topic -The Cell - Structure and Function- is an exploration of 
             the fundamental building blocks of living organisms. Cells are the 
             smallest functional units of life, and understanding their structure and 
             function is essential to comprehending the complexities of the biological 
             world.
 
-            In this topic, students embark on a fascinating journey into the microscopic realm, where they&apos;ll discover the remarkable diversity
+            In this topic, students embark on a fascinating journey into the microscopic realm, where they will discover the remarkable diversity
             of cells, from the simplest, single-celled organisms to the highly
             specialized cells within the human body. The study of cells not 
             only unveils their physical structure but also unravels the 
@@ -45,7 +44,7 @@ const Tutorials: React.FC = () => {
         </div>
             <div className="px-10 py-4">
               <p className="text-gray-700 text-base dark:text-white">
-                The cell is the fundamental unit of life. It&apos;s the 
+                The cell is the fundamental unit of life. It is the 
                 smallest structure that exhibits all the characteristics of 
                 living things. Cells vary in size and shape and can be found 
                 in all living organisms, from single-celled bacteria to 
